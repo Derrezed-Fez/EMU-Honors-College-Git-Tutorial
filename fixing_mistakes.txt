@@ -1,0 +1,15 @@
+How to Fix Mistakes
+
+Made changes to a file, and want to revert to before?
+    git checkout -- [filename.filetype]
+
+Added a file that you didn't want to add?
+    git reset [filename.filetype]
+
+Want to revert to a past commit?
+    git log
+    //copy commit id
+    git revert [commit id]
+
+or
+    gitk //to bring up gui 

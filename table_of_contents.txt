@@ -1,0 +1,11 @@
+Table of Contents
+
+start_here.txt      - Getting Started
+
+workflow.txt        - Daily Git Workflow 
+
+git_commands.txt    - Useful Commands
+
+merging.txt         - How to Merge Branches & How to Deal with Conflicts
+
+fixing_mistakes.txt - How to fix mistakes

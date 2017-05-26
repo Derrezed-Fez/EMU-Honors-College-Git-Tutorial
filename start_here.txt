@@ -1,0 +1,42 @@
+Getting Started
+
+Requirements:
+
+-Git Bash: 
+ https://git-scm.com/
+ When installing just keep the default options
+
+-A text editor of your choice
+
+Setting up Git:
+- Pin Git Bash to your taskbar/desktop
+- Open Git Bash
+- Navigate to desktop using 'cd'
+    cd desktop
+
+- Set up user information
+    GIT_USER=cspaldi1
+    GIT_NAME='Christie Spalding'
+    GIT_EMAIL="$GIT_USER@emich.edu"
+    export GIT_USER
+    export GIT_NAME
+    export GIT_EMAIL
+
+- clone repository
+    git clone ssh://$GIT_USER@[directory]
+
+- Navigate into repository
+    cd [folder]
+
+- Add branches and finalize
+    git remote add -t webstage webstage ssh://$GIT_USER@webstage.emich.edu:[directory]
+    git remote add -t www www ssh://$GIT_USER@www.emich.edu:[directory]
+    git remote remove origin
+    git config user.email "$GIT_EMAIL"
+    git config user.name "$GIT_NAME"
+
+Git tutorial:
+https://try.github.io/levels/1/challenges/1
+
+Documentation:
+https://git-scm.com/doc

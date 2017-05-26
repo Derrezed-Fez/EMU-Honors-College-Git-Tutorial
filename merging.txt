@@ -1,0 +1,34 @@
+How to Merge Branches
+
+- Checkout the branch that you want to merge into (www)
+    git checkout www
+
+- Merge webstage into production
+    git merge webstage
+
+- Push changes to www   
+    git push www www
+
+- Return to webstage before making anymore changes
+    git checkout webstage
+
+_________________________________________________________________
+
+Dealing with Conflicts
+
+- When you attempt to merge git may say something like:
+    "CONFLICT (content): Merge conflict in table_of_contents.txt
+     Automatic merge failed; fix conflicts and then commit the result."
+
+- Open up the indicated file and search for the following
+    "<<<<<<< HEAD: table_of_contents.txt
+     [code from the branch you are merging into (i.e. www)]
+     =======
+     [code from the branch you are merging from (i.e. webstage)]
+     >>>>>>> test_branch_name:table_of_contents.txt"
+
+- Remove what you don't want 
+
+- Commit changes, use commit message to explain how you fixed the conflict
+
+- Continue with merging procedure 

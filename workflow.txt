@@ -1,0 +1,44 @@
+Daily Git Workflow
+
+- Begining of your shift
+    Pull everyone else's changes at the begining of your shift
+        git pull 
+
+- During your shift
+    Make your own changes and save files
+
+    Check status of your changes and the repository
+        git status
+
+    Add and commit changes
+        This
+            Add your changes one file at a time 
+                git add "[filename.filetype]
+
+            Commit changes 
+                git commit -m "[Brief description of changes, Soft cap of 50 characters]"
+        Or this
+            Add all changes and commit in one line
+                git commit -am "[Brief description of changes, Soft cap of 50 characters]"
+
+    Pull changes if someone pushed since your last pull
+        git pull
+
+    Push your changes, but if you are working with others warn them first
+        git push 
+
+    Wait up to 60 seconds for site to configure read/write access. You will get an internal error
+    if you try to access before compleation, this is normal (this is why you warn your coworkers).
+
+    Test changes
+
+    Repeat
+
+- End of your shift
+    Try not to push if you can not test as it could cause problems for others 
+
+_______________________________________________________________________________________________________
+
+Tips
+
+- If you ever get stuck in a menu use ':q'

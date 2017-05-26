@@ -1,0 +1,68 @@
+Commands That are Useful
+
+Documentation available at:
+    https://git-scm.com/doc
+
+- Does not require git before the commands
+
+gitk
+    Displays changes in a repository or a selected set of commits. 
+    This includes visualizing the commit graph, showing information related to each commit,
+    and the files in the trees of each revision.
+
+cd [foldername]
+    change directory
+    replace foldername with '..' to go up
+
+________________________________________________________________________________________________
+
+- Following commands require 'git' before them
+    Ex: git status
+
+status
+    Gives current state of repository and your workspace
+    Shows all changes not added, and commits that have not been pushed
+
+add [filename.filetype]
+    Adds the file specifed to staging
+    Use this to add untracked files
+
+add '*.[filetype]'
+    Adds all files with that filetype to staging
+    Quotes are mandatory
+
+commit -m "[Brief description of changes, Soft cap of 50 characters]"
+    Commits added changes so that they are ready to push
+
+commit -am "[Brief description of changes, Soft cap of 50 characters]"
+    Adds all changes and then commits said changes so that they are ready to push
+    Will not add files that are untracked, use add to start tracking
+
+log
+    Shows commit history, authors, date, and commit descriptions
+
+push
+    Push changes to remote repository
+
+pull
+    Pull changes from remote repository
+
+diff
+    Shows diffrences between files in the repository and locally
+    Use 'git diff HEAD' to look at the most recent commit
+
+reset [filename.filetype]
+    Unstage files
+    i.e. remove them from step between adding and commiting
+
+revert [commit]
+    Reverts to specific commit
+
+checkout -- [filename.filetype]
+    Unmodifiy a modified file
+
+checkout [branch name]
+    Switches to that branch
+
+merge [branch name]
+    Merges indicated branch into current branch
