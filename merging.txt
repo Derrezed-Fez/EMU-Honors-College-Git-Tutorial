@@ -2,6 +2,9 @@ How to Merge Branches
 
 - Checkout the branch that you want to merge into (www)
     git checkout www
+    
+    - You may have to fetch www first
+        git fetch www
 
 - Merge webstage into production
     git merge webstage
