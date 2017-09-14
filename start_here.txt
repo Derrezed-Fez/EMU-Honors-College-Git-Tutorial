@@ -15,8 +15,8 @@ Setting up Git:
     cd desktop
 
 - Set up user information
-    GIT_USER=cspaldi1
-    GIT_NAME='Christie Spalding'
+    GIT_USER=Your netID
+    GIT_NAME='Your Name'
     GIT_EMAIL="$GIT_USER@emich.edu"
     export GIT_USER
     export GIT_NAME
