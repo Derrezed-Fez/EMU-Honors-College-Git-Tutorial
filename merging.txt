@@ -1,5 +1,7 @@
 How to Merge Branches
 
+NOTE: MAKE SURE YOU ARE IN THE RIGHT DIRECTORY BEFORE YOU BEGIN MERGING!!!!!
+
 - Checkout the branch that you want to merge into (www)
     git checkout www
     
